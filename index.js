@@ -2,7 +2,7 @@ const Koa = require('koa');
 const app = new Koa();
 
 app.use(async ctx => {
-    ctx.body = 'Hello Vercel-9999999';
+    ctx.body = 'Hello Vercel-9999999 : '+ctx.query;
 });
 
 app.listen(3008, () => {
